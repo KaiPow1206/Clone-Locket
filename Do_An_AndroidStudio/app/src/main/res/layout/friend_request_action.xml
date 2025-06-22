@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="12dp"
+    android:layout_marginVertical="4dp">
+
+    <!-- Nội dung text -->
+    <TextView
+        android:id="@+id/textRequestMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User đã gửi lời mời kết bạn"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Nhóm 2 nút -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAccept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chấp nhận"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button_yellow"
+            android:layout_marginEnd="8dp"
+            android:minHeight="40dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Từ chối"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button_yellow"
+            android:minHeight="40dp" />
+    </LinearLayout>
+</LinearLayout>

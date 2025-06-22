@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Locket</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_notifications">Thông Báo</string>
+
+    <string name="menu_gallery">Ảnh</string>
+    <string name="menu_info">Thông Tin Locket</string>
+    <string name="menu_friend">Bạn Bè</string>
+    <string name="menu_phone">Số Điện Thoại</string>
+    <string name="menu_logout">Đăng Xuất</string>
+    <string name="menu_personal">Cá Nhân</string>
+    <string name="menu_login">Đăng Nhập</string>
+    <string name="menu_signup">Đăng Kí</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#000000"
+    tools:context=".ui.login.LoginFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardBackgroundColor="#FFD700">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="Logo"
+            app:srcCompat="@drawable/locket" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Locket"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFD700"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/editTextUsername"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:padding="12dp"
+        android:background="@drawable/text_view_border"
+        android:drawableStart="@drawable/ic_menu_avatar"
+        android:drawablePadding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#AAAAAA"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/text_view_border"
+        android:drawableStart="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:textColor="#000"
+        android:textColorHint="#AAAAAA" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/buttonLogin"
+        android:layout_width="250dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFD700"
+        android:padding="12dp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/textRegisterPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dont't have account? "
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/textSignUpNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up now"
+            android:textColor="#FFD700"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+</LinearLayout>

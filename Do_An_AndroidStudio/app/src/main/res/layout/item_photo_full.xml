@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#000000">
+
+    <ImageButton
+        android:id="@+id/btnDeletePhoto"
+        android:layout_width="47dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_more_vert" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp">
+
+        <FrameLayout
+            android:layout_width="360dp"
+            android:layout_height="480dp">
+
+            <ImageView
+                android:id="@+id/imageMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/textCaptionFull"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/bg_caption_overlay"
+                android:gravity="center_horizontal"
+                android:paddingLeft="18dp"
+                android:paddingTop="7dp"
+                android:paddingRight="18dp"
+                android:paddingBottom="12dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textUploaderFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="Người đăng"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:background="@drawable/bg_uploader_caption"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:gravity="center">
+
+        <!-- LOVE -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp">
+
+            <ImageButton
+                android:id="@+id/btnLove"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="@null"
+                android:src="@drawable/heart"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Love" />
+
+            <TextView
+                android:id="@+id/textLoveCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="-7dp"
+                android:text="."
+                android:textColor="#ff9180"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="visible"
+                android:elevation="8dp" />
+        </FrameLayout>
+
+        <!-- WOW -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp">
+
+            <ImageButton
+                android:id="@+id/btnWow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="@null"
+                android:src="@drawable/wow"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Wow" />
+
+            <TextView
+                android:id="@+id/textWowCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="-7dp"
+                android:text="."
+                android:textColor="#ff9180"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="visible"
+                android:elevation="8dp" />
+        </FrameLayout>
+
+        <!-- SAVE -->
+        <LinearLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/btnSave"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="@null"
+                android:src="@drawable/ic_dowload_pic"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                android:contentDescription="Lưu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lưu"
+                android:textColor="#FFD700"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- HAHAA -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/btnHaha"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="@null"
+                android:src="@drawable/laughing"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Haha" />
+
+            <TextView
+                android:id="@+id/textHahaCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="-7dp"
+                android:text="."
+                android:textColor="#ff9180"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="visible"
+                android:elevation="8dp" />
+        </FrameLayout>
+
+        <!-- SAD -->
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp">
+
+            <ImageButton
+                android:id="@+id/btnSad"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_circle_button"
+                android:backgroundTint="@null"
+                android:src="@drawable/sad"
+                android:scaleType="centerInside"
+                android:padding="10dp"
+                android:contentDescription="Sad" />
+
+            <TextView
+                android:id="@+id/textSadCount"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="-7dp"
+                android:text="."
+                android:textColor="#ff9180"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="visible"
+                android:elevation="8dp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

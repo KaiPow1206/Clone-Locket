@@ -1,0 +1,126 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".ui.avatar.AvatarFragment">
+
+    <!-- ✅ ImageView nằm trên đầu -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Avatar Preview"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_image_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp"
+        android:hint="User Name"
+        android:textColor="#000"
+        android:background="@drawable/text_view_border"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp"
+        android:hint="Email"
+        android:textColor="#000"
+        android:background="@drawable/text_view_border"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="16dp"
+        android:hint="Password"
+        android:textColor="#000"
+        android:background="@drawable/text_view_border"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSelectAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Chọn Avatar"
+        android:backgroundTint="#FFD700"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FFD700"
+        android:text="Cập nhật tài khoản"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectAvatar" />
+
+    <Button
+        android:id="@+id/buttonDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#FF0000"
+        android:text="XÓA TÀI KHOẢN"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUpdate" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chào bạn! Đây là ứng dụng Clone Locket được làm ra bởi KaiPow, vì đây là ứng dụng chỉ là clone nên việc hoàn thiện chưa tốt khi trải nghiệm bạn thông cảm. \nMột lần nữa mình KaiPow xin cảm ơn bạn !!!!"
+        android:textColor="#C7787676"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="100dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
